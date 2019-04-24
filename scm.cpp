@@ -1,3 +1,69 @@
+help_message();
+    		continue;
+    	} 
+
+    	ts.putback(t);
+    	cout << result_sym << statement() << "\n";
+	}
+	catch(exception& e){
+		cerr << "Error : " << e.what() << "\n";
+		clean_up_mess();
+	}
+}
+
+
+int main()
+try { 
+	vars.declare("pi",3.1415926535, true);
+    vars.declare("e",2.7182818284, true);
+	calculate();
+	cout << '\n';
+	return 0;
+}
+catch(exception& e){
+  cerr << "Error : " << e.what() << '\n';
+  cout << "Enter ~ to exit. \n"; // So that left out stream 
+  for (char ch; cin >> ch;)      // dont do the press key to exit 
+  		if(ch == '~') return 1;  // for us
+  return 1;
+}
+catch(...){
+  cerr << "Error : Unknown exception";
+  return 2;
+}
+help_message();
+    		continue;
+    	} 
+
+    	ts.putback(t);
+    	cout << result_sym << statement() << "\n";
+	}
+	catch(exception& e){
+		cerr << "Error : " << e.what() << "\n";
+		clean_up_mess();
+	}
+}
+
+
+int main()
+try { 
+	vars.declare("pi",3.1415926535, true);
+    vars.declare("e",2.7182818284, true);
+	calculate();
+	cout << '\n';
+	return 0;
+}
+catch(exception& e){
+  cerr << "Error : " << e.what() << '\n';
+  cout << "Enter ~ to exit. \n"; // So that left out stream 
+  for (char ch; cin >> ch;)      // dont do the press key to exit 
+  		if(ch == '~') return 1;  // for us
+  return 1;
+}
+catch(...){
+  cerr << "Error : Unknown exception";
+  return 2;
+}
 
 if((string[4]!='/')||(string[7]!='/')||(string[5]>'3')||(string[8]>'3'))
 				{
